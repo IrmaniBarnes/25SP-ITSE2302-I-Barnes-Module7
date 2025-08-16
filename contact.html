@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pretty Reckless — Contact & Order</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+
+  <!-------------------- Top announcement bar ------------>
+  
+  <div class="topbar">
+    <div class="container">FREE SHIPPING OVER $100 | NEW DROPS EVERY FRIDAY</div>
+  </div>
+
+  <!-------- Header ------>
+
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Pretty Reckless</a>
+
+      <!-----------------  Nav ------------->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">New In</a></li>
+          <li><a href="#">Shop By</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" type="button">CART</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!------------- HERO ----------->
+
+    <section class="hero">
+      <div class="container">
+        <h1>Contact & Order</h1>
+        <p class="subline">Tell us what you’d like</p>
+      </div>
+    </section>
+
+    <!---------- FORM & SUMMARY ---------->
+
+    <section class="form-section">
+      <div class="container form-wrap">
+
+        <!-------- CONTACT / ORDER FORM --------->
+
+        <section class="form-card">
+          <h3 id="formTitle">Place an Order</h3>
+
+          <form id="orderForm">
+
+            <!-------- Name -------->
+
+            <fieldset class="fieldset">
+              <legend>Your Name</legend>
+
+              <!----------- First & Last name ---------->
+
+              <div class="two-col">
+                <div class="form-control">
+                  <label for="firstName">First Name</label>
+                  <input id="firstName" name="firstName" type="text" required>
+                </div>
+
+                <div class="form-control">
+                  <label for="lastName">Last Name</label>
+                  <input id="lastName" name="lastName" type="text" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <!------- Contact Information -------->
+
+            <fieldset class="fieldset">
+              <legend>Contact Information</legend>
+
+              <!----------- Email & Phone ----------->
+              <div class="two-col">
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required>
+                </div>
+
+                <div class="form-control">
+                  <label for="phone">Phone (TEL)</label>
+                  <input id="phone" name="phone" type="tel" placeholder="555-123-4567">
+                </div>
+              </div>
+            </fieldset>
+
+            <!------------- Delivery ----------->
+
+            <fieldset class="fieldset">
+              <legend>Delivery</legend>
+
+              <!------------- Preferred Delivery Date ----------->
+
+              <label for="date">Preferred Delivery Date</label>
+              <input id="date" name="date" type="date">
+            </fieldset>
+
+            <!--------------- Preferences -------------->
+
+            <fieldset class="fieldset">
+              <legend>Preferences (Optional)</legend>
+
+              <!-------------- Time --------------->
+
+              <label for="contactTime">Best Time to Contact You</label>
+              <input id="contactTime" name="contactTime" type="time">
+
+              <!--------------- Style (dropdown) ------------>
+
+              <label for="styleSelect">Style Preference</label>
+              <select id="styleSelect" name="styleSelect">
+                <option value="">— Choose a Style —</option>
+                <option value="SocialSavage">Social Savage</option>
+                <option value="HumanKind">Human Kind</option>
+                <option value="FollowYourDreams">Follow Your Dreams</option>
+                <option value="HimeSakura">Hime Sakura</option>
+                <option value="PrettyRecklessChoice">Pretty Reckless Choice</option>
+              </select>
+            </fieldset>
+
+            <!------------ Items ----------->
+
+            <fieldset class="fieldset">
+              <legend>Items</legend>
+              <div class="inline">
+                <label>
+                  <input type="checkbox" name="items" value="20">
+                  T-Shirt <em class="pill">$20.00</em>
+                </label>
+
+                <label>
+                  <input type="checkbox" name="items" value="30">
+                  Hoodie <em class="pill">$30.00</em>
+                </label>
+
+                <label>
+                  <input type="checkbox" name="items" value="24">
+                  Sweat Pants <em class="pill">$24.00</em>
+                </label>
+
+                <label>
+                  <input type="checkbox" name="items" value="40">
+                  Sweat Set <em class="pill">$40.00</em>
+                </label>
+              </div>
+            </fieldset>
+
+            <!------------ Shipping (Radios) ------------->
+
+            <fieldset class="fieldset">
+              <legend>Shipping</legend>
+              <div class="inline">
+                <label>
+                  <input type="radio" name="shipping" value="0" checked>
+                  Standard <em class="pill">$0.00</em>
+                </label>
+
+                <label>
+                  <input type="radio" name="shipping" value="8">
+                  Express <em class="pill">$8.00</em>
+                </label>
+              </div>
+            </fieldset>
+
+            <!----------- Notes --------->
+
+            <fieldset class="fieldset">
+              <legend>Notes (optional)</legend>
+
+              <!--------- textarea --------->
+
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" placeholder="Sizing, colors, special requests…"></textarea>
+            </fieldset>
+
+            <!----------- Buttons ------------>
+
+            <div class="btns">
+              <button id="submitBtn" class="btn-primary" type="submit">Place Order</button>
+              <button id="resetBtn" class="btn-secondary" type="reset">Reset Form</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ORDER SUMMARY (DOM output, not console) -->
+
+        <aside class="summary-card">
+          <h3 id="summaryTitle">Order Summary</h3>
+          <p id="summaryHint">Fill out the form and click <strong>Place Order</strong> to see your details and total here.</p>
+          <table class="summary">
+            <tbody id="summaryBody">
+              <tr><th scope="row">Name</th><td>—</td></tr>
+              <tr><th scope="row">Email</th><td>—</td></tr>
+              <tr><th scope="row">Phone</th><td>—</td></tr>
+              <tr><th scope="row">Best Contact Time</th><td>—</td></tr>
+              <tr><th scope="row">Delivery Date</th><td>—</td></tr>
+              <tr><th scope="row">Style Preference</th><td>—</td></tr>
+              <tr><th scope="row">Items</th><td>—</td></tr>
+              <tr><th scope="row">Shipping</th><td>—</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td>Total</td><td id="summaryTotal">$0.00 USD</td></tr>
+            </tfoot>
+          </table>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!------------ FOOTER --------------->
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pretty Reckless. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="JavaScript/scripts.js"></script>
+</body>
+</html>
