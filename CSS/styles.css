@@ -264,7 +264,7 @@ nav a:hover {
     border: 3px solid #D6FF57;
 }
 
-.thumb { display: inline-block; }
+/* .thumb { display: inline-block; } */
 
 .thumb img{
   display: block;
